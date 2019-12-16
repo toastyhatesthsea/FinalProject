@@ -29,6 +29,7 @@
             android:maxHeight="50dp"
             android:maxWidth="50dp"
             android:scaleType="fitXY"
+            
             >
 
         </ImageView>
