@@ -10,8 +10,9 @@
         studios on the visual development of several video games.</string>
     <string name="back">Back</string>
     <string name="movies">Movies</string>
-    <string name="Cities">Cities</string>
+    <string name="People">People</string>
     <string name="data_error">Data Error</string>
     <string name="process">Process</string>
     <string name="download_error">Download Error</string>
+    <string name="title_activity_people">People</string>
 </resources>

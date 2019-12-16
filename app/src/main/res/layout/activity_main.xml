@@ -10,6 +10,7 @@
     android:background="@drawable/bg"
     android:orientation="vertical"
     tools:context=".MainActivity"
+    android:outlineAmbientShadowColor="@color/cardview_dark_background"
 
     >
 
@@ -27,7 +28,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/app_name"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:background="#0000ff"
+            />
 
         <Button
             android:id="@+id/InfoButton"
@@ -56,11 +61,11 @@
         </Button>
 
         <Button
-            android:id="@+id/Cities"
+            android:id="@+id/peopleButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/Cities"
+            android:text="@string/People"
 
             />
 

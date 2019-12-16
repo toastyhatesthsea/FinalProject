@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button learnMoreButton, movieButton;
+    Button learnMoreButton, movieButton, peopleButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +18,18 @@ public class MainActivity extends AppCompatActivity {
 
         learnMoreButton = findViewById(R.id.InfoButton);
         movieButton = findViewById(R.id.movieButton);
+        peopleButton = findViewById(R.id.peopleButton);
 
         learnMoreButton.setOnClickListener(new LearnMoreListener());
         movieButton.setOnClickListener(new MovieListener());
+        peopleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent peopleScreen = new Intent(getApplicationContext()
+                        , People.class);
+                startActivity(peopleScreen);
+            }
+        });
     }
 
 

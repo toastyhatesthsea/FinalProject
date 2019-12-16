@@ -20,10 +20,11 @@ import java.util.Scanner;
 
 import javax.net.ssl.HttpsURLConnection;
 
-public class Movies extends AppCompatActivity {
+public class People extends AppCompatActivity {
+
 
     private final static String TAG = MainActivity.class.getSimpleName();
-    private final static String URL_STRING = "https://ghibliapi.herokuapp.com/films";
+    private final static String URL_STRING = "https://ghibliapi.herokuapp.com/people";
 
     Button backButton;
 
@@ -31,8 +32,9 @@ public class Movies extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_movies);
-        DownloadData downloadData = new DownloadData(this);
+        setContentView(R.layout.activity_people);
+
+        People.DownloadData downloadData = new People.DownloadData(this);
         downloadData.execute(URL_STRING);
 
         backButton = findViewById(R.id.backButton);
@@ -48,11 +50,13 @@ public class Movies extends AppCompatActivity {
         });
     }
 
+
+
     private static class DownloadData extends AsyncTask<String, Void, String> {
 
-        private WeakReference<Movies> activityWeakRef;
+        private WeakReference<People> activityWeakRef;
 
-        DownloadData(Movies context) {
+        DownloadData(People context) {
             activityWeakRef = new WeakReference<>(context);
         }
 
@@ -88,8 +92,8 @@ public class Movies extends AppCompatActivity {
             }
 
             StringBuilder results = new StringBuilder();
-            String title;
-            String director;
+            String name;
+            String age;
             String row;
 
             try {
@@ -99,9 +103,9 @@ public class Movies extends AppCompatActivity {
 
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject book = jsonArray.getJSONObject(i);
-                    title = book.getString("title");
-                    director = book.getString("director");
-                    row = title + "\nDirected by: " + director + "\n\n";
+                    name = book.getString("name");
+                    age = book.getString("age");
+                    row = name + "\nAge: " + age + "\n\n";
 
                     results.append(row);
                 }
@@ -119,11 +123,11 @@ public class Movies extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            Movies aActivity = activityWeakRef.get();
+            People aActivity = activityWeakRef.get();
             if (aActivity == null || aActivity.isFinishing()) {
                 return;
             }
-            TextView aTextView = aActivity.findViewById(R.id.output);
+            TextView aTextView = aActivity.findViewById(R.id.peopleTextView);
             aTextView.setText(s);
         }
     }
