@@ -10,6 +10,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg"
 
     >
 
@@ -19,6 +20,7 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:layout_gravity="center"
+        android:textSize="30dp"
          />
     <Button
         android:id="@+id/LearnMore"
