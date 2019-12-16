@@ -6,27 +6,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
     android:orientation="vertical"
-    tools:context=".LearnMore">
+    tools:context=".Movies"
+    android:background="@drawable/bg"
+    >
 
-    <TextView
-        android:id="@+id/learnMore"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_gravity="center_horizontal"
-        android:padding="10dp"
-        android:textSize="20dp">
+        >
 
-    </TextView>
 
-    <Button
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/back">
 
-    </Button>
+
+    </LinearLayout>
 
 </LinearLayout>
