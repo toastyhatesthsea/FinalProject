@@ -16,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        learnMoreButton = findViewById(R.id.LearnMore);
+        learnMoreButton = findViewById(R.id.InfoButton);
+
+        learnMoreButton.setOnClickListener(new LearnMoreListener());
     }
 
 
@@ -24,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
 
-            Intent learnMoreScreen = new Intent(getApplicationContext(), )
+            Intent learnMoreScreen = new Intent(getApplicationContext(),
+                    LearnMore.class);
+            startActivity(learnMoreScreen);
 
         }
     }
