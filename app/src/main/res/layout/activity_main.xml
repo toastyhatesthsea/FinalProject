@@ -32,6 +32,7 @@
             android:textColor="#ffffff"
             style="@style/TextAppearance.AppCompat.Headline"
             android:background="#0000ff"
+            
             />
 
         <Button
