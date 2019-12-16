@@ -11,4 +11,7 @@
     <string name="back">Back</string>
     <string name="movies">Movies</string>
     <string name="Cities">Cities</string>
+    <string name="data_error">Data Error</string>
+    <string name="process">Process</string>
+    <string name="download_error">Download Error</string>
 </resources>
