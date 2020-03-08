@@ -1,4 +1,6 @@
 
   Some of the biggest challenges was figuring out design patterns to use and what not to use. I had some issues finding proper design code and figuring out how to use it properly. I also ran into some JSON issues with the API I was using, since it kept going down and I had to redesign the whole project within a week and create a new one basically.
+  
   Some of the easiers parts were the Android code itself. Since I knew some Android(a little) it made my life a little easier. I was orginally going to make the project into a web project but since the course was in Java that would prove too difficult to display. Some of the design patterns such as inheritance and polymorphism were somewhat easy to grasp. There was some design patterns I tried using but I couldn't find a good use for them, so I scraped it. I tried to make the design patterns relatively easy.
+  
   I also had some issues with the GUI and opted to make the GUI as simple as possible. Since I haven't studied much GUI design in Android, I didn't get too complicated with it. Making the GUI as user friendly as I could was a goal of mine. Find a good Web API can be difficult, that is one thing I will take away from this project, along with using proper OOP design methods when needed.
