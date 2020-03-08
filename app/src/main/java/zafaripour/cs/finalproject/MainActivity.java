@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button learnMoreButton, movieButton, peopleButton;
+    Button learnMoreButton, movieButton, peopleButton, quizButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         learnMoreButton = findViewById(R.id.InfoButton);
         movieButton = findViewById(R.id.movieButton);
         peopleButton = findViewById(R.id.peopleButton);
+        quizButton = findViewById(R.id.QuizButton);
 
         learnMoreButton.setOnClickListener(new LearnMoreListener());
         movieButton.setOnClickListener(new MovieListener());
@@ -28,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent peopleScreen = new Intent(getApplicationContext()
                         , People.class);
                 startActivity(peopleScreen);
+            }
+        });
+
+        quizButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent quizScreen = new Intent(getApplicationContext(),
+                        QuizThing.class);
+                startActivity(quizScreen);
             }
         });
     }

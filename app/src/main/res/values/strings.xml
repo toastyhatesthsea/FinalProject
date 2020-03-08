@@ -8,11 +8,22 @@
         after the success of Nausicaä of the Valley of the Wind (1984), with funding by Tokuma Shoten.
         Studio Ghibli has also collaborated with video game
         studios on the visual development of several video games.</string>
+    <string name="question1">Steven Spielberg is the creator of Studio Ghibli</string>
+    <string name="question2">Studio Ghibli is based in Japan</string>
+    <string name="question3">Tortoro is a character based in the Studio Ghibli
+    universe</string>
     <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="false_button">False</string>
+    <string name="true_button">True</string>
+    <string name="game_over">Game Over</string>
+    <string name="quiz_button">Quiz Game Thing</string>
     <string name="movies">Movies</string>
     <string name="People">People</string>
     <string name="data_error">Data Error</string>
     <string name="process">Process</string>
     <string name="download_error">Download Error</string>
     <string name="title_activity_people">People</string>
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
 </resources>

@@ -14,7 +14,9 @@
         <activity android:name=".People"></activity>
         <activity android:name=".Movies" />
         <activity android:name=".LearnMore" />
+        <activity android:name=".QuizThing"/>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
