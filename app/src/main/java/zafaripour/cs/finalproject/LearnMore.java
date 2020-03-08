@@ -16,6 +16,7 @@ public class LearnMore extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_learn_more);
 
         info = findViewById(R.id.learnMore);

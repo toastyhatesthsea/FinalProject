@@ -84,6 +84,7 @@ public class Movies extends AppCompatActivity {
             } finally {
                 if (urlConnection != null) {
                     urlConnection.disconnect();
+
                 }
             }
 
